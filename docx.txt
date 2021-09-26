@@ -1,0 +1,9 @@
+Hello, good afternoon.Thank you for the opportunity extended to me to participate in this exercise and am hoping to hear your response on what I did.
+
+Things to note in my implementation:
+1. I animated the hero image to give it a living feel, the way heart pumps to show life, that's the same feeling I tried to achieve with the animation.
+2. I also used animation on scroll, so as you scroll down each of the elements fade in.
+3. The second section containing comments and reviews are swipeable
+4. I also tried to make the design pixel perfect as much as possible though I don't have enough time to check every details.
+5. Responsiveness is not part of what we are asked to note but for every good design I believe it should be responsive on every screen sizes too.
+I am done with the 
