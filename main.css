@@ -10,33 +10,9 @@ body{
     max-width: 100%;
     overflow-x: hidden;
 }
-/* typewriting start */
-.typewriter span {
-    color: #222222;
-    overflow: hidden;
-    border-right: .1em solid orange;
-    white-space: nowrap;
-    display: block;
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
-  }
-/* typewriting ends */
 .navbar{
     background-color: #ffffff;
-    height: 64px;
+    height: 83px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -51,13 +27,17 @@ body{
 .nav li a{
     padding-top: 9px;
 }
+.nav li{
+    margin-right: 40px;
+}
 .nav li.nav-list a{
     height: 40px;
     display: flex;
     align-items: center;
-    font-size: 13.5px;
+    font-size: 15px;
     padding-top: 14px;
-    color: #BABABA !important;
+    color: #555555 !important;
+    font-weight: 500;
 }
 .nav li.active a{
     color: #222222 !important;
@@ -67,33 +47,37 @@ body{
     height: 40px;
     display: flex;
     align-items: center;
-    font-size: 13.5px;
+    font-size: 16px;
     border: 1px solid var(--orange-theme) !important;
     color: var(--orange-theme) !important;
-    border-radius: 2px;
+    border-radius: 4px;
     padding-left: 24px !important;
     padding-right: 24px !important;
 }
 .hero{
     max-width: 100%;
     margin: 0;
-    height: calc(100vh - 54px);
+    height: calc(100vh - 83px);
     background-color: var(--light-pink-theme);
 }
 .hero-title{
     font-weight: 900;
-    font-size: 32px;
+    font-size: 40px;
     margin-top: 100px;
-    padding-left: 75px;
-    line-height: 38px;
+    padding-left: 100px;
+    padding-right: 8%;
+    line-height: 48.76px
 }
 .hero-title + h5{
-    padding-left: 75px;
+    font-size: 16px;
+    padding-left: 100px;
     margin-top: 8px;
-    line-height: 20px;
+    line-height: 19.5px;
+    padding-right: 12%;
+    color: #747474;
 }
 .hero-search{
-    padding-left: 75px;
+    padding-left: 100px;
     padding-right: 30px;
     position: relative;
     margin-top: 18px;
@@ -101,78 +85,120 @@ body{
 .hero-search input{
     outline: none;
     border: none;
-    height: 46px;
+    height: 72px;
     width: 100%;
-    padding-left: 12px;
+    padding-left: 24px;
+    font-size: 17px;
     border-radius: 4px;
 }
 .hero-search input::placeholder{
-    font-size: 13.5px;
+    font-size: 17px;
+    color: #DEDEDE;
 }
 .hero-search button{
     background-color: var(--orange-theme);
     border: none;
     outline: none;
-    height: 36px;
+    width: 133px;
+    height: 58px;
     padding-left: 18px;
     padding-right: 18px;
     color: #ffffff;
     position: absolute;
     border-radius: 4px;
-    right: 35px;
-    top: 4.5px;
+    right: 38px;
+    top: 7px;
 }
+
+.hero-search2{
+    /* padding-left: 100px; */
+    padding-right: 30px;
+    position: relative;
+    margin-top: 18px;
+    display: flex;
+}
+.hero-search2 input{
+    outline: none;
+    border: none;
+    height: 54px;
+    width: 75%;
+    padding-left: 24px;
+    font-size: 17px;
+    border-radius: 4px;
+}
+.hero-search2 input::placeholder{
+    font-size: 15px;
+    color: #DEDEDE;
+}
+.hero-search2 button{
+    background-color: var(--orange-theme);
+    border: none;
+    outline: none;
+    width: 133px;
+    height: 58px;
+    padding-left: 18px;
+    padding-right: 18px;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-left: 12px
+}
+
 .hero-search + p{
-    padding-left: 75px;
-    font-size: 13.5px;
+    padding-left: 100px;
+    font-size: 16px;
     margin-top: 24px;
 }
 .hero-search + p a{
     color: var(--orange-theme)
 }
 .hero blockquote{
-    font-size: 13.5px;
-    padding-left: 75px;
-    margin-top: 70px;
+    font-size: 14px;
+    padding-left: 100px;
+    padding-right: 200px;
+    margin-top: 50px;
+    position: relative;
+    line-height: 17.07px;
+    color: #8D8D8D;
+    border-left: 0;
 }
-.hero blockquote:before{
-    color: var(--orange-theme);
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.15em;
-    vertical-align: -0.4em;
-  }
 
-  .hero blockquote::after{
-    color: var(--orange-theme);
-    content: close-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.15em;
-    vertical-align: -0.7em;
-  }
+.hero blockquote .quote-1{
+    position: absolute;
+    left: 55px;
+}
+
+.hero blockquote .quote-2{
+    position: absolute;
+    right: 200px;
+    bottom: 0;
+}
   .hero-right{
       height: 100%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
+      background-image: url("./assets/hero-intro.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
   }
   .hero-right .hero-image{
-      width: 120%;
-      animation: 2s animate linear infinite;
+      width: 105%;
+      right: 50px;
+      position: absolute;
+      bottom: 0;
   }
   .relative{
       position: relative;
   }
   .hero-right .comment{
       width: 263px;
-      height: 146px;
+      min-height: 146.37px;
+      font-size: 12px;
       border-radius: 4px;
       background-color: #fff;
       position: absolute;
-      left: 0;
-      bottom: 48px;
+      left: -100px;
+      bottom: 40px;
       z-index: 100;
   }
   .hero-right .comment-rating{
@@ -200,12 +226,13 @@ body{
       justify-content: center;
   }
   .comment{
-    width: 263px;
-    min-height: 146px;
+    width: 320px;
+    min-height: 225px;
     padding-bottom: 18px;
     border-radius: 4px;
     background-color: #fff;
-    box-shadow: 3px 3px 8px lightgray;
+    box-shadow: 2px 1px 3px lightgray;
+    border: 1px solid #f5f1f1;
     z-index: 100;
 }
 .comment-rating{
@@ -217,24 +244,13 @@ body{
 }
 .comment-body{
     padding-left: 18px;
-    padding-right: 18px;
+    padding-right: 100px;
 }
 .comment-body p{
     font-size: 13px;
     color: #8D8D8D;
     margin-top: 12px;
 }
-  @keyframes animate{
-      0%{
-          width: 115%;
-      }
-      50%{
-          width: 120%
-      }
-      100%{
-          width: 115%
-      }
-  }
 
 .hero-right .comment-img{
     width: 42px;
@@ -260,8 +276,8 @@ body{
     background-color: #fff;
     border-radius: 2px;
     position: absolute;
-    top: 25%;
-    left: 20%;
+    top: 28%;
+    left: 21%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -273,7 +289,7 @@ body{
     border-radius: 2px;
     position: absolute;
     top: 32%;
-    right: 6%;
+    right: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -287,8 +303,8 @@ body{
     min-height: 100vh;
     padding-top: 6%;
     padding-bottom: 6vh;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 100px;
+    padding-right: 100px;
     background-color: #fff;
 }
 .section-two h3{
@@ -302,27 +318,30 @@ body{
     color: #888888;
 }
 .swiper{
-    height: 85vh !important;
+    height: 100vh !important;
 }
 .swiper-pagination{
     bottom: 0 !important;
 }
 .section-three{
     background-color: #F8F8F8;
-    height: 40vh;
+    height: 380px;
 }
 .section-three .row{
     padding-left: 120px;
-    padding-top: 3.5%;
+    padding-top: 6%;
 }
 .section-three .hero-search{
     padding-left: 0 !important;
 }
 .section-three h3{
     font-weight: 700;
+    font-size: 29px;
 }
 .section-three p{
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 21px;
+    padding-right: 140px;
     color: #888888;
 }
 .section-four{
@@ -336,18 +355,19 @@ body{
 }
 .section-five{
     width: 100%;
-    height: 90vh;
+    min-height: 95vh;
+    padding-bottom: 8vh;
 }
 .section-five .row{
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .section-five .advert{
-    width: 90%;
-    height: 32vh;
+    width: 350.62px;
+    height: 317.69px;
     background-color:#FBFBFB;
     border: 1px solid #D6D6D6;
-    margin-top: 12vh;
+    margin-top: 16vh;
     margin-left: 5%;
     display: flex;
     justify-content: center;
@@ -360,16 +380,17 @@ body{
 }
 .get-started{
     width: 100%;
-    height: 150px;
+    height: 188px;
     border-radius: 8px;
     background-color: #FFEBFF;
     margin-top: 12vh;
 }
 .get-started h4{
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 8vh;
     padding-left: 6%;
-    line-height: 24px;
+    font-size: 25px;
+    line-height: 30.48px;
 }
 .get-started-right{
     height: 100%;
@@ -382,9 +403,9 @@ body{
     background-color: var(--orange-theme);
     border: none;
     outline: none;
-    height: 36px;
-    padding-left: 18px;
-    padding-right: 18px;
+    height: 54px;
+    padding-left: 24px;
+    padding-right: 24px;
     color: #ffffff;
     border-radius: 4px;
 }
@@ -426,7 +447,9 @@ body{
 @media screen and (max-width: 500px){
     .hero-title{
         padding-left: 16px;
-        font-size: 24px;
+        padding-right: 16px;
+        font-size: 45px;
+        line-height: 45px;
     }
     .hero-title + h5,
     .hero-search,
@@ -439,7 +462,12 @@ body{
     }
     .hero-right .hero-image{
         margin-bottom: 32vh;
+        position: relative;
     }
+    .hero-right .comment{
+        left: 12%
+    }
+    
     .section-three .row svg{
         display: none;
     }
@@ -466,9 +494,7 @@ body{
         display: none;
     }
 }
-.hidden-xs{
-    visibility: hidden;
-}
+
 html{
     overflow-x: hidden;
 }
